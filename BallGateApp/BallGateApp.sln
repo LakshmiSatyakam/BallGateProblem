@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallGateApp", "BallGateApp\BallGateApp.csproj", "{E7BE2117-FE68-4AAA-B92A-C481B87D2E45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallGateApp.UnitTest", "BallGateApp\BallGateApp.UnitTest.csproj", "{30BA1203-FAB9-47CD-BFBB-FE976CE17516}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallGateApp.UnitTest", "BallGateAppUnitTest\BallGateApp.UnitTest.csproj", "{30BA1203-FAB9-47CD-BFBB-FE976CE17516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
