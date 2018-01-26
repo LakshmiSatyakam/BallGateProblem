@@ -63,7 +63,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_NULL_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator("", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator("", 10, out long emptyContainerGuess);
 
             Assert.AreEqual("Invalid guess!", error);
             Assert.AreEqual(0, emptyContainerGuess);
@@ -72,7 +72,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_Blank_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator(" ", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator(" ", 10, out long emptyContainerGuess);
 
             Assert.AreEqual("Invalid guess!", error);
             Assert.AreEqual(0, emptyContainerGuess);
@@ -81,7 +81,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_String_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator("aaa", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator("aaa", 10, out long emptyContainerGuess);
 
             Assert.AreEqual("Invalid guess!", error);
             Assert.AreEqual(0, emptyContainerGuess);
@@ -90,7 +90,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_Negative_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator("-100", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator("-100", 10, out long emptyContainerGuess);
 
             Assert.AreEqual("\n Guess should be in the range [1, 10]", error);
             Assert.AreEqual(-100, emptyContainerGuess);
@@ -99,7 +99,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_LessThan_Lower_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator("-1", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator("-1", 10, out long emptyContainerGuess);
 
             Assert.AreEqual("\n Guess should be in the range [1, 10]", error);
             Assert.AreEqual(-1, emptyContainerGuess);
@@ -108,7 +108,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_GreaterThan_Upper_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator("12", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator("12", 10, out long emptyContainerGuess);
 
             Assert.AreEqual("\n Guess should be in the range [1, 10]", error);
             Assert.AreEqual(12, emptyContainerGuess);
@@ -117,7 +117,7 @@ namespace BallGate
         [TestMethod]
         public void GuessValidator_Valid_Input_Test()
         {
-            string error = InputValidator.GuessEmptyContainerValidator("2", 10, out int emptyContainerGuess);
+            string error = InputValidator.GuessEmptyContainerValidator("2", 10, out long emptyContainerGuess);
 
             Assert.AreEqual(string.Empty, error);
             Assert.AreEqual(2, emptyContainerGuess);
